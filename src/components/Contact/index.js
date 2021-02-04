@@ -2,7 +2,6 @@ import React from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 
 // Image
-import Whats from "../../assets/whats.png";
 
 // Styles
 import {
@@ -30,7 +29,7 @@ const Contact = () => {
           href="https://api.whatsapp.com/send?phone=5581999210412"
           target="_blank"
         >
-          <img src={Whats} alt="whatsapp-logo" />
+          {/* <img src={Whats} alt="whatsapp-logo" /> */}
           (81)9 9921-0412
         </WhatsAppButton>
       </ButtonArea>

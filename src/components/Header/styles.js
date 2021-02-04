@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  background: #000;
+  background: #215ede;
 `;
 
 export const Content = styled.div`
@@ -9,9 +9,15 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: #000;
+  background: #215ede;
 
   @media (min-width: 768px) {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
+`;
+
+export const CompanyName = styled.h3`
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 `;

@@ -2,45 +2,41 @@ import React from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 
 // Images
-import Me from "../../assets/me.png";
+// import Me from "../../assets/me.png";
 
 // Styles
 import {
   Container,
   Content,
-  ImgContainer,
   InfoArea,
   AboutMe,
-  MyName,
-  Info,
+  LeftSide,
+  RightSide,
+  Paragraph,
 } from "./styles";
 
 const ThirdSection = () => {
   return (
     <Container>
       <Content className="container-wrap">
-        <ImgContainer>
-          <img src={Me} alt="owner" />
-        </ImgContainer>
+        <LeftSide></LeftSide>
+        <RightSide className="RIGHT_SIDE">
+          <AboutMe>
+            Acquis is consistently recognized by top industry
+            <br /> publications and recruitment agencies as a leader in
+            <br /> its field and a Best Firm to Work For.
+          </AboutMe>
 
-        <InfoArea>
-          <ScrollableAnchor id={"sobre"}>
-            <AboutMe>
-              Eu sou apaixonado por tecnologia e marketing digital. Estou sempre
-              atento ao que há de mais atual no mercado e meu compromisso é
-              impactar vidas e alavancar negócios.
-            </AboutMe>
-          </ScrollableAnchor>
-          <AboutMe>
-            E essas são algumas das razões pelas quais eu faço o que faço.
-          </AboutMe>
-          <AboutMe>
-            Sou focado em resultados e ajudo empreendedores que estejam
-            empenhados nos seus negócios a venderem mais através da internet.
-          </AboutMe>
-          <MyName>Pedro Wanderley</MyName>
-          <Info>Estratégias de marketing digital</Info>
-        </InfoArea>
+          <InfoArea>
+            <ScrollableAnchor id={"sobre"}>
+              <Paragraph>
+                This recognition may not come as a surprise to those who know
+                the passion and drive of the Acquis team to deliver excellent
+                results for our clients.
+              </Paragraph>
+            </ScrollableAnchor>
+          </InfoArea>
+        </RightSide>
       </Content>
     </Container>
   );

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #000;
+  background-color: #082d73;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #000;
+  background-color: #082d73;
   padding: 50px 0px;
 
   @media (min-width: 768px) {
@@ -27,7 +27,7 @@ export const ImgContainer = styled.div`
 `;
 
 export const InfoArea = styled.div`
-  text-align: center;
+  align-self: flex-end;
 
   @media (min-width: 768px) {
     width: 40%;
@@ -35,19 +35,28 @@ export const InfoArea = styled.div`
   }
 `;
 
-export const AboutMe = styled.p`
-  color: #999;
-  margin-top: 15px;
-  line-height: 25px;
-`;
-
-export const MyName = styled.h2`
+export const AboutMe = styled.h2`
   color: #fff;
-  font-weight: bold;
-  margin-top: 30px;
+  line-height: 25px;
+  line-height: 30px;
+  border-bottom: 1px solid;
+  padding-bottom: 100px;
+  padding-top: 50px;
 `;
 
-export const Info = styled.h3`
-  color: #999;
-  opacity: 0.5;
+export const Paragraph = styled.h4`
+  color: #ccd3e3;
+  margin-top: 50px;
+  line-height: 25px;
+  line-height: 30px;
+`;
+
+export const LeftSide = styled.div`
+  display: flex;
+`;
+
+export const RightSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;

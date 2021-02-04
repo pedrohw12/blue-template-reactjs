@@ -1,53 +1,47 @@
 import React from "react";
 
-// Components
-import Item from "./components/Item";
+// Icons
+import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
+import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
+import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
 
 // Styles
-import { Container, Title, CardsArea } from "./styles";
+import {
+  Container,
+  Content, 
+  InfoArea,
+  Phrases,
+  Author,
+  AuthorSubTitle,
+  ArrowArea,
+  ArrowContainer,
+} from "./styles";
 
 const SecondSection = () => {
-  const itens = [
-    {
-      title: "Websites",
-      description:
-        "Construo sites bonitos e simples, que cumprem com o seu principal objetivo - atrair leads e clientes.",
-    },
-    {
-      title: "Landing Pages",
-      description:
-        "Páginas bem estruturadas que conduzem as pessoas - bloco a bloco - para o objetivo final.",
-    },
-    {
-      title: "Anúncios",
-      description:
-        "Faço a gestão das suas campanhas de anúncios no Google.",
-    },
-    {
-      title: "Estratégias",
-      description:
-        "Eu desenho toda a sua campanha de vendas, desde atração, passando pelo engajamento, até a oferta.",
-    },
-    {
-      title: "Consultoria",
-      description:
-        "Tem alguma dificuldade no seu projeto? Eu te ajudo a desbloquear o caminho para uma campanha de sucesso.",
-    },
-    {
-      title: "Motivação",
-      description:
-        "Você sabe o que tem que fazer, mas não faz? Precisa de um empurrão? Eu posso te atormentar, se você quiser, claro.",
-    },
-  ];
-
   return (
     <Container className="container-wrap">
-      <Title>Meus serviços</Title>
-      <CardsArea>
-        {itens.map((item, key) => (
-          <Item key={key} title={item.title} description={item.description} />
-        ))}
-      </CardsArea>
+      <Content>
+        <FormatQuoteIcon className="quote" />
+        <InfoArea>
+          <Phrases>
+            What I've liked best about building this company has been the
+            opportunity to hire an exceptional group of people. We've not only
+            helped them grow, we've learned from them.
+          </Phrases>
+          <Author>Chief Digital Officer</Author>
+          <AuthorSubTitle>
+            Fortune 500 Consumer Packaged Goods Company
+          </AuthorSubTitle>
+        </InfoArea>
+        <ArrowArea>
+          <ArrowContainer>
+            <KeyboardArrowLeftIcon />
+          </ArrowContainer>
+          <ArrowContainer>
+            <KeyboardArrowRightIcon />
+          </ArrowContainer>
+        </ArrowArea>
+      </Content>
     </Container>
   );
 };

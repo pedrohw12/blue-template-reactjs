@@ -4,11 +4,12 @@ import React from "react";
 import Menu from "../Menu";
 
 // Styles
-import { Container, Content } from "./styles";
+import { Container, Content, CompanyName } from "./styles";
 
 const Header = () => (
   <Container>
     <Content className="container-wrap">
+      <CompanyName>Empresa</CompanyName>
       <Menu />
     </Content>
   </Container>
