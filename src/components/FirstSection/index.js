@@ -37,7 +37,7 @@ const FirstSection = () => {
           <ArrowDropDownCircleIcon fontSize="large" />
         </InfoArea>
         <ImgArea>
-          <img src={Man} alt="man-image" />    
+          <img src={Man} alt="man" />    
         </ImgArea>
       </Content>
     </Container>

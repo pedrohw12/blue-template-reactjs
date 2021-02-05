@@ -63,7 +63,7 @@ export const ArrowArea = styled.div`
   }
 `;
 
-export const ArrowContainer = styled.div`
+export const ArrowContainer = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,4 +71,6 @@ export const ArrowContainer = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: 0;
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 `;

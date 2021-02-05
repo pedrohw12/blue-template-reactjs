@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Styles
 import MenuIcon from "@material-ui/icons/Menu";
