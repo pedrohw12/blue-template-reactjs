@@ -6,14 +6,10 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
   background: #215ede;
-
-  @media (min-width: 768px) {
-    justify-content: space-between;
-  }
 `;
 
 export const CompanyName = styled.h3`
@@ -25,10 +21,12 @@ export const CompanyName = styled.h3`
 export const MenuItem = styled.button`
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 5px;
   border: 0px;
   background-color: #215ede;
 
+  @media (min-width: 375px) {
+    letter-spacing: 5px;
+  }
 
   &:hover {
     opacity: 0.5;

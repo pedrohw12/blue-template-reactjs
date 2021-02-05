@@ -5,12 +5,22 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 1024px) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 
   svg {
     color: #215ede;
@@ -26,7 +36,10 @@ export const InfoArea = styled.div``;
 export const Phrases = styled.h2`
   line-height: 33px;
   color: #000;
-  width: 80%;
+
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
 `;
 
 export const Author = styled.h3`
@@ -41,8 +54,13 @@ export const AuthorSubTitle = styled.h4`
 
 export const ArrowArea = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  margin-top: 50px;
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    margin-top: 0px;
+  }
 `;
 
 export const ArrowContainer = styled.div`

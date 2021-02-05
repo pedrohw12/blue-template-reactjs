@@ -6,8 +6,11 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  padding-top: 50px;
   padding-bottom: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+  }
 
   svg {
     color: #fff;
@@ -23,17 +26,24 @@ export const Title = styled.h4`
 
 export const BigTitle = styled.h1`
   color: #fff;
-  font-size: 50px;
+  font-size: 43px;
   font-weight: bold;
   margin-top: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const Explanation = styled.div`
-  width: 40%;
   color: #fff;
   line-height: 30px;
   margin-top: 20px;
   margin-bottom: 70px;
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 `;
 
 export const ImgArea = styled.div`
