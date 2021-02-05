@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Styles
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 
 // Styles
 import { MenuList, MenuListItem, MenuListItemAnchor } from "./styles";
 
-const Menu = () => {
+const Menu = ({ setIsOpenMenu, isOpenMenu }) => {
   return (
     <nav className="app-menu">
       <MenuList>
         <MenuListItem>
-          <MenuListItemAnchor href="/">
-            Menu <MenuIcon color="#fff" />
-          </MenuListItemAnchor>
+          {!isOpenMenu && (
+            <MenuListItemAnchor onClick={setIsOpenMenu}>
+              Menu <MenuIcon color="#fff" />
+            </MenuListItemAnchor>
+          )}
+          {isOpenMenu && (
+            <MenuListItemAnchor onClick={setIsOpenMenu}>
+              <CloseIcon color="#fff" />
+            </MenuListItemAnchor>
+          )}
         </MenuListItem>
       </MenuList>
     </nav>

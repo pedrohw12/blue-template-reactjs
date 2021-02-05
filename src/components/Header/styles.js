@@ -21,3 +21,16 @@ export const CompanyName = styled.h3`
   text-transform: uppercase;
   letter-spacing: 5px;
 `;
+
+export const MenuItem = styled.button`
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 0px;
+  background-color: #215ede;
+
+
+  &:hover {
+    opacity: 0.5;
+  }
+`;

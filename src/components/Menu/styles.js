@@ -8,15 +8,17 @@ export const MenuListItem = styled.li`
   list-style: none;
 `;
 
-export const MenuListItemAnchor = styled.a`
+export const MenuListItemAnchor = styled.button`
   display: flex;
   align-items: center;
   font-weight: bold;
   line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  background-color: #215ede;
   font-size: 14px;
+  border: 0;
+  color: #fff;
 
   svg {
     margin-left: 5px;
